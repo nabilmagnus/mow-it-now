@@ -1,6 +1,7 @@
 package fr.publicis.sapient.mowitnow.app.core
 
 import fr.publicis.sapient.mowitnow.app.io.GetResource
+import fr.publicis.sapient.mowitnow.app.model.Position.{E, N, S, W}
 import fr.publicis.sapient.mowitnow.app.model._
 import org.junit.runner.RunWith
 import org.scalatest.matchers.must.Matchers
@@ -71,7 +72,6 @@ class TransformTest extends AnyWordSpec
     }
   }
 
-
   "rotateLeft() from N turn 90 degree to the left" should {
     "return Postition(1,2,'W')" in {
       val lawnMowerPosition = new Position(Coordinates(1, 2), N)
@@ -115,7 +115,6 @@ class TransformTest extends AnyWordSpec
       assert(newLawnMowerPosition == expectedPosition)
     }
   }
-
 
   "rotateRight() from N turn 90 degree to the left" should {
     "return Postition(1,2,'E')" in {

@@ -34,6 +34,7 @@ class Transform extends TransformAbstract {
   }
 
   /**
+   * Rotate left
    *
    * @param initPosition
    * @return
@@ -62,6 +63,12 @@ class Transform extends TransformAbstract {
   }
 
 
+  /**
+   * RotateRight
+   *
+   * @param initPosition
+   * @return
+   */
   override def rotateRight(initPosition: Position): Position = {
     val newPosition: Position = initPosition.orientation.name match {
       case Position.N.name ⇒ Position(

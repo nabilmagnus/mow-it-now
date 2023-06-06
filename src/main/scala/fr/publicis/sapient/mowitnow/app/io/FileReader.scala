@@ -11,7 +11,13 @@ trait FileReader extends GetResource {
   }
 
 
-  def readTextFile(filename: String): Try[List[String]] = {
-    Try(Source.fromFile(filename).getLines.toList)
+  /**
+   * Read text file
+   *
+   * @param fileName fileName
+   * @return
+   */
+  def readTextFile(fileName: String): Try[List[String]] = {
+    Try(Source.fromFile(fileName).getLines.toList)
   }
 }

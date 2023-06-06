@@ -6,8 +6,9 @@ import fr.publicis.sapient.mowitnow.app.model.{Coordinates, Instruction, Positio
 object FileParser {
 
   /**
+   * Parse all intructions
    *
-   * @param instructionRaw
+   * @param instructionRaw instruction raw data
    * @return
    */
   def parseInstructions(instructionRaw: List[Char]): List[Instruction] = {
@@ -15,8 +16,9 @@ object FileParser {
   }
 
   /**
+   * Parse only one instruction
    *
-   * @param instruction
+   * @param instruction get the case object
    * @return
    */
   def parseInstruction(instruction: Char): Instruction = {

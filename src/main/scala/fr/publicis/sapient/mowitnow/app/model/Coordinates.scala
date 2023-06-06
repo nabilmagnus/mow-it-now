@@ -3,6 +3,7 @@ package fr.publicis.sapient.mowitnow.app.model
 object Coordinates {
 
   /**
+   * Check if object is inside lawn surface or no
    *
    * @param coordinates
    * @return

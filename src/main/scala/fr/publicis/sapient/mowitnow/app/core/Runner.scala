@@ -7,6 +7,13 @@ import fr.publicis.sapient.mowitnow.tools.logging.Logging
 
 class Runner extends Logging with App {
 
+  /**
+   * Execute one instruction
+   *
+   * @param position
+   * @param instruction
+   * @return
+   */
   def executeInstruction(
                           position: Position,
                           instruction: Instruction
@@ -38,6 +45,7 @@ class Runner extends Logging with App {
 
 
   /**
+   * Execute all instructions
    *
    * @param initPosition
    * @param instructions
